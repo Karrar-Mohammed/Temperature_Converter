@@ -3,7 +3,7 @@ package com.example.temperatureconverter.viewModels
 import androidx.lifecycle.ViewModel
 import kotlinx.coroutines.flow.MutableStateFlow
 
-class MainViewModel: ViewModel() {
+class MainViewModel : ViewModel() {
 
     val fahrenheit = MutableStateFlow<String>("32")
 

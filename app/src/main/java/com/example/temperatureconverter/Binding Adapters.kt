@@ -7,7 +7,7 @@ import androidx.databinding.BindingAdapter
 import com.example.temperatureconverter.utils.round3Digits
 
 @BindingAdapter(value = ["customBackground"])
-fun setBackgroundColor(view: View, fahrenheit: String){
+fun setBackgroundColor(view: View, fahrenheit: String) {
     if (fahrenheit.isEmpty()) {
         view.setBackgroundColor(ContextCompat.getColor(view.context, R.color.white))
     } else {
@@ -28,8 +28,8 @@ fun setBackgroundColor(view: View, fahrenheit: String){
 }
 
 @BindingAdapter(value = ["setCelsius"])
-fun setCelsius(textView: TextView, fahrenheit: String){
-    if (fahrenheit.isEmpty()){
+fun setCelsius(textView: TextView, fahrenheit: String) {
+    if (fahrenheit.isEmpty()) {
         textView.text = ""
     } else {
         textView.text = convertFahrenheitToCelsius(fahrenheit).toString()
